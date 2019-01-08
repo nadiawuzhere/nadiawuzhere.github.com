@@ -13,6 +13,10 @@ body {
     border: 1px solid #a5d4fc;
 }
 
+.port-row {
+    border: 1px solid red;
+}
+
 img {
     max-width: 100%
 }
