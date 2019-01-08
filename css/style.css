@@ -53,7 +53,7 @@ h4 {
 p,
 a {
     line-height: 1.7em;
-    font-weight: lighter;
+    font-weight: bolder;
     letter-spacing: 1px;
     font-size: 16px;
 }
@@ -88,7 +88,7 @@ li {
 }
 
 .sub {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .award {
@@ -98,7 +98,7 @@ li {
 blockquote {
     font-size: 1em;
     padding: 0 15px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .mainleft {
