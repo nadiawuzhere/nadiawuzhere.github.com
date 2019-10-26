@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 
 <head>
@@ -530,14 +530,10 @@
     </div><!--container end-->
 
     <!--    FOOTER   -->
-    <footer class="text-center">
-        <p> &copy; Nadia Doutcheva,
-            <script language="javascript" type="text/javascript">
-            var today = new Date()
-            var year = today.getFullYear()
-            document.write(year)
-            </script>
-          </p>
+    <footer class="text-center" id="copyright_footer">
+        <p>
+            &copy; Nadia Doutcheva,&nbsp;
+        </p>
         <!-- <p>&copy; <a href="http://creativecommons.org/licenses/by/3.0/">CC-3.0</a>, template by <a href="https://evenfly.com">EvenFly </a> and <a target="_blank" href="http://www.facebook.com/towkirahmedbappy">Towkir Ahmed Bappy</a>, adapted by Nadia Doutcheva, favicon by Nadia Doutcheva.
         </p> -->
     </footer>
@@ -558,5 +554,18 @@
 </script>
 
 <!--end google analytics -->
+
+<script>
+    const footer = document.getElementById('copyright_footer');
+    if (!footer) {
+        throw new Error('No copyright footer found (Did you forget an ID?)');
+    }
+
+    // Find the paragraph element within that footer
+    const para = footer.querySelector('p');
+
+    // Append the current year to the end of it
+    para.innerText += new Date().getFullYear();
+</script>
 
 </html>

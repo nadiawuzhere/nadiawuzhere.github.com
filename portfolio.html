@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 
 <head>
@@ -417,13 +417,10 @@
 
 
     <!--     FOOTER -->
-    <footer class="text-center">
-        <p> &copy; Nadia Doutcheva,
-            <script language="javascript" type="text/javascript">
-            var today = new Date()
-            var year = today.getFullYear()
-            document.write(year)
-            </script>
+    <footer class="text-center" id="copyright_footer">
+        <p>
+            &copy; Nadia Doutcheva,&nbsp;
+        </p>
     </footer>
 
 </body>
@@ -442,5 +439,18 @@
 </script>
 
 <!--end google analytics -->
+
+<script>
+    const footer = document.getElementById('copyright_footer');
+    if (!footer) {
+        throw new Error('No copyright footer found (Did you forget an ID?)');
+    }
+
+    // Find the paragraph element within that footer
+    const para = footer.querySelector('p');
+
+    // Append the current year to the end of it
+    para.innerText += new Date().getFullYear();
+</script>
 
 </html>
