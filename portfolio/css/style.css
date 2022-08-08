@@ -129,6 +129,12 @@ table {
   text-align: left;
 }
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+vertical-align: inherit;
+}
+
 footer p,
 footer a {
     font-size: 13px;
