@@ -124,6 +124,11 @@ blockquote {
     text-align: right;
 }
 
+table {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
 footer p,
 footer a {
     font-size: 13px;
