@@ -126,6 +126,7 @@ blockquote {
 
 table {
     text-align: left;
+    border-collapse: collapse;
 }
 
 td, th {
